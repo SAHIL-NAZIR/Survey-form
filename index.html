@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Survey form</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="heading">
+        <h1 id="title">Survey form</h1>
+        <p id="description">survey about designing tools</p>
+    </div>
+    <div id="container">
+        <form id="survey-form" action="">
+            <div id="name-div" class="form-items">
+                <label id="name-label" for="name">Name</label>
+                <input id="name" type="text" name="name" placeholder="e.g., SAHIL NAZIR" required>
+            </div>
+            <div id="email-div" class="form-items">
+                <label id="email-label" for="email">Email</label>
+                <input id="email" type="email" name="email" placeholder="e.g., sahilnazir@email.com" required>
+            </div>
+            <div id="number-div" class="form-items">
+                <label id="number-label" for="number">Number</label>
+                <input id="number" type="number" min="0" max="9999999999" name="age" placeholder="e.g., 9876543210">
+            </div>
+            <div id="dropdown-div" class="form-items">
+                <p id="dropdown-text">Job</p>
+                <select id="dropdown" name="job">
+                    <option disabled selected>your current role</option>
+                    <option value="0">front-end developer</option>
+                    <option value="1">back-end developer</option>
+                    <option value="2">fullstack developer</option>
+                </select>
+            </div>
+            <div id="radio-div" class="form-items">
+                <p>Your fav tool</p>
+                <label id="figma" for="figma"><input type="radio" name="fav-tool">Figma</label>
+                <label id="xd" for="xd"><input type="radio" name="fav-tool">XD</label>
+            </div>
+            <div id="dropdown-div2" class="form-items">
+                <p>Your fav feature</p>
+                <select id="dropdown2" name="job" placeholder="dfs">
+                    <option disabled selected>select</option>
+                    <option value="0">feature1</option>
+                    <option value="1">feature2</option>
+                    <option value="2">feature3</option>
+                </select>
+            </div>
+            <div id="checkbox-div" class="form-items">
+                <p>For what purpose you use this tool</p>
+                <label id="ui" for="ui"><input type="checkbox" name="ui">UI design</label>
+                <label id="ux" for="ux"><input type="checkbox" name="ux">UX design</label>
+            </div>
+            <div id="textarea-div" class="form-items">
+                <label for="textarea">Do you suggest any improvement?</label>
+                <input id="suggest" type="text" name="textarea" placeholder="suggest something">
+            </div>
+            <div id="button" class="form-items">
+                <input id="submit" type="submit">
+            </div>
+        </form>    
+    </div>
+</body>
+</html>
